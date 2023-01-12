@@ -80,7 +80,7 @@ export const NavBar = () => {
             </a>*/}
             </div>
             <button className="vvd" onClick={() => console.log("connect")}>
-              <span>Let`s Connect</span>
+              <a href="https://www.linkedin.com/in/fabian-lopez-b4933a216/" target="_blank">Let`s Connect</a>
             </button>
           </span>
         </Navbar.Collapse>

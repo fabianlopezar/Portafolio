@@ -6,7 +6,12 @@ import headerImg from "../img/header-img.svg";
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = ["Web Developer", "Web Designer", "Game Developer" ,"multimedia engineering student"];
+  const toRotate = [
+    "Web Developer",
+    "Web Designer",
+    "Game Developer",
+    "multimedia engineering student",
+  ];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
@@ -51,12 +56,15 @@ export const Banner = () => {
               {`Hi I'm Fabian Lopez `}
               <span className="wrap">{text}</span>
             </h1>
-            <p>Me apasiona el desarrollo de software y me esfuerzo por estar siempre actualizado con las últimas tendencias y tecnologías en el campo. Me gusta trabajar en equipo y colaborar con otros desarrolladores para lograr un producto final sólido y funcional.
-
-</p>
-            <button onClick={() => console.log("connect")}>
+            <p>
+              Me apasiona el desarrollo de software y me esfuerzo por estar
+              siempre actualizado con las últimas tendencias y tecnologías en el
+              campo. Me gusta trabajar en equipo y colaborar con otros
+              desarrolladores para lograr un producto final sólido y funcional.
+            </p>
+            <a href="https://www.linkedin.com/in/fabian-lopez-b4933a216/" target="_blank">
               Lets Connect <ArrowRightCircle size={25} />
-            </button>
+            </a>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={headerImg} alt="Header Img" />
