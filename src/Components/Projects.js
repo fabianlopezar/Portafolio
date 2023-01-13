@@ -2,12 +2,12 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-import projImg1 from "../img/project-img1.png";
-import projImg2 from "../img/project-img2.png";
-import projImg3 from "../img/project-img3.png";
+
 import colorSharp2 from "../img/color-sharp2.png";
 import fyt from "../img/findYourTeacher.jpg";
 import piFood from "../img/PI-Food.png";
+import furros from "../img/Furros.JPG"
+import festival from "../img/FestivalVerde.JPG"
 
 export const Projects = () => {
   const projects = [
@@ -22,29 +22,25 @@ export const Projects = () => {
       title: "Proyecto Individual Food",
       description: "Proyecto estudiantil para el bootcamp SoyHenry.",
       imgUrl: piFood,
-      url: "",
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg1,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Business Startup",
-      description: "Design & Development",
-      imgUrl: projImg3,
+      url: "https://www.youtube.com/watch?v=c3-A21JSVmQ&t=4s",
     },
   ];
+  const gameProjects=[{
+    title: "Furros al ataque",
+    description:
+      "Iniciativa desarrollada por compañeros de la universidad, para aprender nuevas habilidades y trabajar en equipo",
+    imgUrl:furros,
+    url: "https://fabilopez.itch.io/sup",
+    
+  },
+  {
+    title: "Festival Verde",
+    description:
+      "Aplicacion en donde se logra tener una experiencia inmersiva, dando a conocer emprendimientos colombianos",
+    imgUrl:festival,
+    url: "https://fabilopez.itch.io/sup",
+    
+  },]
 
   return (
     <section className="project" id="project">
@@ -60,7 +56,7 @@ export const Projects = () => {
                 >
                   <h2>Projects</h2>
                   <p>
-                    En esta seccion encontraras todos los proyectos que he
+                    En esta seccion encontraras los mejores proyectos que he
                     realizado ya sean individual o grupales.
                   </p>
 
@@ -75,10 +71,10 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                        <Nav.Link eventKey="first">Web Develop</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                        <Nav.Link eventKey="second">Game Develop</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="third">Tab 3</Nav.Link>
@@ -91,6 +87,7 @@ export const Projects = () => {
                       }
                     >
                       <Tab.Pane eventKey="first">
+                        <p>Tecnologias: ReactJS, Css, HTML, JavaScript, PostgresSql, Sequelize, Redux, git.</p>
                         <Row>
                           {projects.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
@@ -99,20 +96,17 @@ export const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
+                         Tecnologias: Unity3D, C#, Photoshop, git.
                         </p>
+                        <Row>
+                          {gameProjects.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
+                          Proximamente...
                         </p>
                       </Tab.Pane>
                     </Tab.Content>

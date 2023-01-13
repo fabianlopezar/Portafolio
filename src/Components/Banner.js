@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../img/header-img.svg";
+import personaje from "../img/personaje.png";
+
+import "../Estilos/Banner.css";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -62,12 +65,31 @@ export const Banner = () => {
               campo. Me gusta trabajar en equipo y colaborar con otros
               desarrolladores para lograr un producto final sólido y funcional.
             </p>
-            <a href="https://www.linkedin.com/in/fabian-lopez-b4933a216/" target="_blank">
-              Lets Connect <ArrowRightCircle size={25} />
+
+            <a
+              href="https://www.linkedin.com/in/fabian-lopez-b4933a216/"
+              target="_blank"
+            >
+              <h2>
+                Linkedin <ArrowRightCircle size={25} />
+              </h2>
             </a>
+            <a href="https://github.com/fabianlopezar" target="_blank">
+             
+              <h2>
+                GitHub <ArrowRightCircle size={25} />
+              </h2>
+            </a>
+            <a href="https://www.youtube.com/channel/UCH9-MdRsuL16VmachYoS4og" target="_blank">
+              
+              <h2>
+                Youtube <ArrowRightCircle size={25} />   </h2>
+           
+            </a>
+            <h4>fabianlopez928@gmail.com</h4>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={headerImg} alt="Header Img" />
+            <img src={personaje} alt="Header Img" className="imagen-banner" />
           </Col>
         </Row>
       </Container>

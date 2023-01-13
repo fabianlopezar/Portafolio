@@ -33,7 +33,7 @@ export const Skills = () => {
           <Col>
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
-              <p>lorem</p>
+              
 
               <Carousel
                 responsive={responsive}
@@ -46,11 +46,11 @@ export const Skills = () => {
                 </div>
                 <div className="item">
                   <img src={meter2} alt="Image" />
-                  <h5>Brand Identity</h5>
+                  <h5>Ingles B1</h5>
                 </div>
                 <div className="item">
                   <img src={meter3} alt="Image" />
-                  <h5>Logo Design</h5>
+                  <h5>Game Developer</h5>
                 </div>
                 <div className="item">
                   <img src={meter1} alt="Image" />

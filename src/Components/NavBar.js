@@ -6,6 +6,7 @@ import navIcon2 from "../img/nav-icon2.svg";
 import navIcon3 from "../img/nav-icon3.svg";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
+import fotoPerfil from "../img/fotoperfil.png";
 
 //17:00
 export const NavBar = () => {
@@ -32,7 +33,7 @@ export const NavBar = () => {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          <img src={logo} alt="Logo" />
+          <img src={fotoPerfil} alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
@@ -64,15 +65,18 @@ export const NavBar = () => {
               }
               onClick={() => onUpdateActiveLink("project")}
             >
-              Proyects
+              Projects
             </Nav.Link>
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/fabian-lopez-b4933a216/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/fabian-lopez-b4933a216/"
+                target="_blank"
+              >
                 <img src={navIcon1} alt=""></img>{" "}
               </a>
-             {/* <a href="#">
+              {/* <a href="#">
                 <img src={navIcon2} alt=""></img>{" "}
               </a>
               <a href="#">
@@ -80,7 +84,12 @@ export const NavBar = () => {
             </a>*/}
             </div>
             <button className="vvd" onClick={() => console.log("connect")}>
-              <a href="https://www.linkedin.com/in/fabian-lopez-b4933a216/" target="_blank">Let`s Connect</a>
+              <a
+                href="https://www.linkedin.com/in/fabian-lopez-b4933a216/"
+                target="_blank"
+              >
+                Let`s Connect
+              </a>
             </button>
           </span>
         </Navbar.Collapse>
