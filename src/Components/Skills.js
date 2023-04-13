@@ -1,10 +1,17 @@
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Container, Row, Col } from "react-bootstrap";
-import meter1 from "../img/meter1.svg";
-import meter2 from "../img/meter2.svg";
-import meter3 from "../img/meter3.svg";
+import cs from "../images/images-skills/cs.png";
+import html from "../images/images-skills/html.png";
+import js from "../images/images-skills/js.png";
+import nodejs from "../images/images-skills/nodejs.png";
+import post from "../images/images-skills/postgres.png";
+import react from "../images/images-skills/react.png";
+import unity from "../images/images-skills/unity.png";
+
 import colorSharp from "../img/color-sharp.png";
+
+import "../Estilos/Skills.css";
 
 export const Skills = () => {
   const responsive = {
@@ -32,8 +39,7 @@ export const Skills = () => {
         <Row>
           <Col>
             <div className="skill-bx wow zoomIn">
-              <h2>Skills</h2>
-              
+              <h2>Habilidades</h2>
 
               <Carousel
                 responsive={responsive}
@@ -41,27 +47,41 @@ export const Skills = () => {
                 className="skill-slider"
               >
                 <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Web Development</h5>
+                  <img src={cs} alt="Image" />
+                  <h5>C#</h5>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="Image" />
-                  <h5>Ingles B1</h5>
+                  <img src={html} alt="Image" />
+                  <h5>HTML</h5>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="Image" />
-                  <h5>Game Developer</h5>
+                  <img src={js} alt="Image" />
+                  <h5>JavaScript</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
-                  <h5>Web Development</h5>
+                  <img src={nodejs} alt="Image" />
+                  <h5>NodeJs</h5>
+                </div>
+                <div className="item">
+                  <img src={post} alt="Image" />
+                  <h5>Postgress</h5>
+                </div>
+                <div className="item">
+                  <img src={react} alt="Image" />
+                  <h5>React | ReactNative</h5>
+                </div>
+                
+                <div className="item">
+                  <img src={unity} alt="Image" />
+                  <h5>Unity3D</h5>
+                 
                 </div>
               </Carousel>
             </div>
           </Col>
         </Row>
       </Container>
-      <img className="background-image-left" src={colorSharp} />
+      {/*<img className="background-image-left" src={colorSharp} />*/}
     </section>
   );
 };

@@ -70,12 +70,12 @@ export const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a
+              {/*<a
                 href="https://www.linkedin.com/in/fabian-lopez-b4933a216/"
                 target="_blank"
               >
                 <img src={navIcon1} alt=""></img>{" "}
-              </a>
+              </a>*/}
               {/* <a href="#">
                 <img src={navIcon2} alt=""></img>{" "}
               </a>

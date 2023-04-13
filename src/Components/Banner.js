@@ -9,12 +9,7 @@ import "../Estilos/Banner.css";
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
-  const toRotate = [
-    "Web Developer",
-    "Web Designer",
-    "Game Developer",
-    "multimedia engineering student",
-  ];
+  const toRotate = ["Web Developer", "Game Developer"];
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const period = 2000;
@@ -51,12 +46,14 @@ export const Banner = () => {
 
   return (
     <section className="banner" id="home">
+  
       <Container>
+     
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <span className="tagline">Welcome to my Portfolio</span>
+            <span className="tagline">¡Bienvenido a mi Portfolio!</span>
             <h1>
-              {`Hi I'm Fabian Lopez `}
+              {`Hola soy Fabian López `}
               <span className="wrap">{text}</span>
             </h1>
             <p>
@@ -75,18 +72,20 @@ export const Banner = () => {
               </h2>
             </a>
             <a href="https://github.com/fabianlopezar" target="_blank">
-             
               <h2>
                 GitHub <ArrowRightCircle size={25} />
               </h2>
             </a>
-            <a href="https://www.youtube.com/channel/UCH9-MdRsuL16VmachYoS4og" target="_blank">
-              
+            <a
+              href="https://www.youtube.com/channel/UCH9-MdRsuL16VmachYoS4og"
+              target="_blank"
+            >
               <h2>
-                Youtube <ArrowRightCircle size={25} />   </h2>
-           
+                Youtube <ArrowRightCircle size={25} />{" "}
+              </h2>
             </a>
             <h4>fabianlopez928@gmail.com</h4>
+           
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={personaje} alt="Header Img" className="imagen-banner" />

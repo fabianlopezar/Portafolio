@@ -1,4 +1,10 @@
 .imagen-banner{
-    width: 300px;
+    width: 450px;
     height: 350px;
+}
+.contenedor-banner{
+    background-color: red;
+}
+.contenedor-banner-p{
+    
 }

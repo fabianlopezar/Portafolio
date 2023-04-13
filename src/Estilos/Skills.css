@@ -1,0 +1,11 @@
+.skill-bx{
+    background-color:#0cb7f7;
+    box-shadow: 32px 32px 32px rgba(0, 0, 0, 0.3);
+}
+.unity{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
