@@ -8,6 +8,7 @@ import fyt from "../img/findYourTeacher.jpg";
 import piFood from "../img/PI-Food.png";
 import furros from "../img/Furros.JPG";
 import festival from "../img/FestivalVerde.JPG";
+import pokedex from "../img/pokedex.jpg";
 
 export const Projects = () => {
   const projects = [
@@ -37,6 +38,15 @@ export const Projects = () => {
       imgUrl: festival,
       url: "https://fabilopez.itch.io/sup",
     },
+  ];
+  const reactNative = [
+    {
+      title: "Pokedex",
+      description: "React Native",
+      imgUrl: pokedex,
+      url: "https://fabilopez.itch.io/pokedex",
+    },
+    
   ];
 
   return (
@@ -89,6 +99,11 @@ export const Projects = () => {
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
                         <p>Haz click en el nombre del proyecto.</p>
+                        <Row>
+                          {reactNative.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
