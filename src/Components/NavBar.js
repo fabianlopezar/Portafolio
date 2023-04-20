@@ -7,6 +7,7 @@ import navIcon3 from "../img/nav-icon3.svg";
 import { HashLink } from "react-router-hash-link";
 import { BrowserRouter as Router } from "react-router-dom";
 import fotoPerfil from "../img/fotoperfil.png";
+import "../Estilos/NavBar.css";
 
 //17:00
 export const NavBar = () => {
@@ -32,8 +33,8 @@ export const NavBar = () => {
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
-        <Navbar.Brand href="#home">
-          <img src={fotoPerfil} alt="Logo" />
+        <Navbar.Brand href="#home" >
+          <img className="borde-navbar" src={fotoPerfil} alt="Logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>

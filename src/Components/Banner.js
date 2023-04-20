@@ -54,8 +54,8 @@ export const Banner = () => {
             <span className="tagline">¡Bienvenido a mi Portfolio!</span>
             <h1>
               {`Hola soy Fabian López `}
-              <span className="wrap">{text}</span>
             </h1>
+            <h2 className="wrap">{text}</h2>
             <p>
               Me apasiona el desarrollo de software y me esfuerzo por estar
               siempre actualizado con las últimas tendencias y tecnologías en el
@@ -67,24 +67,25 @@ export const Banner = () => {
               href="https://www.linkedin.com/in/fabian-lopez-b4933a216/"
               target="_blank"
             >
-              <h2>
+              <h2 className="borde-banner">
+
                 Linkedin <ArrowRightCircle size={25} />
               </h2>
             </a>
             <a href="https://github.com/fabianlopezar" target="_blank">
-              <h2>
+              <h2 className="borde-banner">
                 GitHub <ArrowRightCircle size={25} />
               </h2>
             </a>
-            <a
+            <a 
               href="https://www.youtube.com/channel/UCH9-MdRsuL16VmachYoS4og"
               target="_blank"
             >
-              <h2>
+              <h2 className="borde-banner">
                 Youtube <ArrowRightCircle size={25} />{" "}
               </h2>
             </a>
-            <h4>fabianlopez928@gmail.com</h4>
+            <h4 className="borde-banner">fabianlopez928@gmail.com</h4>
            
           </Col>
           <Col xs={12} md={6} xl={5}>
